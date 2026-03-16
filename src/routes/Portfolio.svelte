@@ -3,7 +3,7 @@
 
 </script>
 
-<section class="min-h-screen w-full bg-rose-800 p-8">
+<section id="portfolio" class="min-h-screen w-full bg-rose-900 p-8 flex flex-col justify-center">
     
     <div class=" flex px-8 py-2">
         <ul class="flex flex-row shrink-0 tickerLeft w-[2200%] ticker gap-8">
@@ -14,7 +14,7 @@
         </ul>  
     </div>
     <div class=" flex px-8 py-2">
-        <ul class="flex flex-row overflow-hidden shrink-0 ticker w-[2200%] tickerRight gap-8">
+        <ul class="flex flex-row shrink-0 ticker w-[2200%] tickerRight gap-8">
             <MovieCards></MovieCards>
         </ul>  
         <ul aria-hidden="true" class="flex flex-row  shrink-0 tickerRight w-[2200%] ticker gap-8">

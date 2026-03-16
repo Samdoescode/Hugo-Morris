@@ -1,19 +1,24 @@
 <script lang="ts">
 	import AboutSection from './AboutSection.svelte';
-	import Mousecursor from './Mousecursor.svelte';
+	import WorkSection from './WorkSection.svelte';
 	import Portfolio from './Portfolio.svelte';
 	import VideoSection from './VideoSection.svelte';
 </script>
 
 <svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<title>Hugo Morris</title>
+	<meta name="description" content="Hugo Morris — Sydney-based film director and writer." />
 </svelte:head>
 
-<section class="relitive">
+<section>
 	<VideoSection />
 	<AboutSection />
-	<Portfolio />
+	<div class="relative min-h-screen overflow-hidden">
+		<div class="absolute inset-0">
+			<Portfolio />
+		</div>
+		<WorkSection />
+	</div>
 </section>
 
 

@@ -21,8 +21,14 @@
 }
 
 body {
-    cursor: none;
     overflow-x: hidden;
+	scroll-behavior: smooth
+}
+
+@media (hover: hover) {
+	body {
+		cursor: none;
+	}
 }
 
 html, body {
@@ -36,8 +42,6 @@ html, body {
 	font-style: normal;
 	font-display: swap;
 }
-
-
 
 .gas {
 	font-family: 'Gasoline', sans-serif;

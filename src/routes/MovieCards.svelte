@@ -2,8 +2,8 @@
 	const Stills = import.meta.glob(
 		'$lib/images/imagestills/Stills/*.{avif,gif,heif,jpeg,jpg,png,tiff,webp}',
 		{
-			as: "url",
 			eager: true,
+			query: '?url', import: 'default'
 		}
 	);
 
@@ -18,17 +18,14 @@
 		return shuffled;
 	}
 
-	const shuffledImages = shuffleArray(imageUrls).map((url) => ({
-		url,
-		height: 224 * (Math.random() + 0.5)
-	}));
+	const shuffledImages = shuffleArray(imageUrls);
 </script>
 
-{#each shuffledImages as image}
-	<li  class="w-1/6 transition-transform grayscale opacity-35 duration-300 hover:scale-110 hover:grayscale-0 hover:opacity-100 shadow-lg">
+{#each shuffledImages as url}
+	<li class="w-1/6 grayscale opacity-35 shadow-lg">
 		<img
-			class="object-cover w-full rounded-sm "
-			src={image.url}
+			class="object-cover w-full rounded-sm"
+			src={url}
 			alt="Still"
 			loading="lazy"
 		/>

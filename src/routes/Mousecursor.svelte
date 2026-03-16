@@ -11,16 +11,10 @@
 		damping: 0.35
 	});
 	let size = new Spring(10);
-    let scroll = 0;
-    let lastMouseX = 50;
-    let lastMouseY = 50;
-    
 </script>
 
-<svelte:window bind:scrollY={scroll}
+<svelte:window
 	onmousemove={(e) => {
-		lastMouseX = e.clientX;
-		lastMouseY = e.clientY;
 		coordsWide.target = { x: e.clientX, y: e.clientY };
         coordsInner.target = { x: e.clientX, y: e.clientY };
 	}}
@@ -28,7 +22,7 @@
 	onmouseup={() => (size.target = 10)}
 />
 
-<div class="w-screen h-screen fixed top-0 left-0 pointer-events-none z-50">
+<div class="cursor-wrapper w-screen h-screen fixed top-0 left-0 pointer-events-none z-50">
     <svg class="w-full h-full"
         role="presentation"
         >
@@ -40,14 +34,16 @@
 
 
 <style>
-	:global(body) {
-		cursor: none;
-	}
-	
 	svg {
 		position: absolute;
 		top: 0;
 		left: 0;
 		pointer-events: none;
+	}
+
+	@media (hover: none) {
+		.cursor-wrapper {
+			display: none;
+		}
 	}
 </style>
