@@ -26,7 +26,7 @@
 		<img
 			class="object-cover w-full rounded-sm"
 			src={url}
-			alt="Still"
+			alt=""
 			loading="lazy"
 		/>
 	</li>

@@ -10,7 +10,7 @@
 	<meta name="description" content="Hugo Morris — Sydney-based film director and writer." />
 </svelte:head>
 
-<section>
+<div>
 	<VideoSection />
 	<AboutSection />
 	<div class="relative min-h-screen overflow-hidden">
@@ -19,6 +19,6 @@
 		</div>
 		<WorkSection />
 	</div>
-</section>
+</div>
 
 

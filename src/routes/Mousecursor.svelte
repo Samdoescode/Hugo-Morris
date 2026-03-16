@@ -14,7 +14,10 @@
 	let size = new Spring(10);
 
     let hovering = $state(false);
-    videoHover.subscribe(v => { hovering = v; });
+    $effect(() => {
+        const unsub = videoHover.subscribe(v => { hovering = v; });
+        return unsub;
+    });
 
     $effect(() => {
         size.target = hovering ? 48 : 10;

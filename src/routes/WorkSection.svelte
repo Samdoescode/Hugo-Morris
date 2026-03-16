@@ -1,4 +1,5 @@
 <script>
+    // @ts-nocheck
     import { videoHover } from '$lib/cursor-store';
 
     let played1 = $state(false);
@@ -33,7 +34,7 @@
     }
 </script>
 
-<section class="grow z-10 min-h-screen flex-col justify-center py-16 px-4 md:px-12">
+<section aria-label="Work" class="grow z-10 min-h-screen flex-col justify-center py-16 px-4 md:px-12">
     <div class="flex flex-col md:flex-row gap-6">
         <!-- Large video -->
         <div

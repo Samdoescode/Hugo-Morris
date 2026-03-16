@@ -4,7 +4,7 @@
 	let { children } = $props();
 </script>
 
-<div class=" bg-zinc-900 overflow-x-clip">
+<div class="bg-zinc-900 overflow-x-clip">
 	<main>{@render children()}</main>
 	<Mousecursor />
 </div>
