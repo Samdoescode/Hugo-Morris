@@ -6,7 +6,7 @@
 
 <section class=" h-screen flex w-screen content-center items-center justify-center">
     
-    <div>
+
     <video autoplay muted loop class="absolute top-0 h-full w-full object-cover">
         <source src={BGvid2} type="video/mp4" />
     </video>
@@ -19,5 +19,5 @@
     >
         <source src={BGvid2} type="video/mp4" />
     </video>
-</div>
+
 </section>

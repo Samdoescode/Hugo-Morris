@@ -55,6 +55,22 @@ html, body {
 	transform: translatex(-100%);
 }
 
+@media (max-width: 767px) {
+	.tickerLeft {
+		animation-duration: 200s;
+	}
+	.tickerRight {
+		animation-duration: 200s;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.tickerLeft,
+	.tickerRight {
+		animation-play-state: paused;
+	}
+}
+
 @keyframes scrollLeft {
 	to {
 		transform: translatex(-100%);

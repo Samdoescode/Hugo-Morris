@@ -7,7 +7,7 @@
 		}
 	);
 
-	const imageUrls: string[] = Object.values(Stills);
+	const imageUrls: string[] = Object.values(Stills) as string[];
 
 	function shuffleArray<T>(array: T[]): T[] {
 		const shuffled = [...array];

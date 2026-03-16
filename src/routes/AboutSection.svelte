@@ -52,7 +52,7 @@ If you’re ready to make work that feels distinctive, confident, and unmistakab
                  </div>
                 <div class="w-full md:w-1/3 md:h-4/5 md:shrink-0 flex flex-col gap-4">
 
-                    <div class="flex-1 min-h-0 grid h-auto md:h-3/5 grid-cols-3 gap-4 overflow-hidden">
+                    <div class="flex-1 min-h-0 grid h-auto md:h-3/5 grid-cols-2 md:grid-cols-3 gap-4 overflow-hidden">
                         {#each Object.entries(wreaths) as [_path, wreath]}
                             <div class="h-full w-full overflow-hidden">
                                 <enhanced:img class="h-full w-full object-contain invert" src={wreath.default} alt="some alt text" />
