@@ -33,7 +33,7 @@
 	onmouseup={() => (size.target = hovering ? 48 : 10)}
 />
 
-<div class="cursor-wrapper w-screen h-screen fixed top-0 left-0 pointer-events-none z-[60]">
+<div class="cursor-wrapper w-screen h-screen fixed top-0 left-0 pointer-events-none z-60">
     <svg class="w-full h-full"
         role="presentation"
         >

@@ -38,12 +38,12 @@
     <div class="flex flex-col md:flex-row gap-6">
         <!-- Large video -->
         <div
-            class="flex flex-col gap-2 md:flex-[2]"
+            class="flex flex-col gap-2 md:flex-2"
             onmouseenter={() => videoHover.set(true)}
             onmouseleave={() => videoHover.set(false)}
         >
-            <h2 class="gas text-zinc-100 text-2xl tracking-widest relative z-[53]">Showreel</h2>
-            <div class="aspect-video relative z-[51]">
+            <h2 class="gas text-zinc-100 text-2xl tracking-widest relative z-53">Showreel</h2>
+            <div class="aspect-video relative z-51">
                 <iframe
                     bind:this={iframe1}
                     src={embedSrc(id1)}
@@ -54,7 +54,7 @@
                 ></iframe>
                 {#if !played1}
                     <div
-                        class="absolute inset-0 z-[52] cursor-none rounded-lg bg-cover bg-center"
+                        class="absolute inset-0 z-52 cursor-none rounded-lg bg-cover bg-center"
                         style="background-image: url('{thumb(id1)}')"
                         onclick={() => play(iframe1, (v) => (played1 = v))}
                         role="button"
@@ -72,9 +72,9 @@
             onmouseenter={() => videoHover.set(true)}
             onmouseleave={() => videoHover.set(false)}
         >
-            <h2 class="gas text-zinc-100 text-2xl relative tracking-widest z-[53]">Commercials</h2>
+            <h2 class="gas text-zinc-100 text-2xl relative tracking-widest z-53">Commercials</h2>
             <div class="flex flex-col gap-6 flex-1">
-                <div class="aspect-video flex-1 relative z-[51]">
+                <div class="aspect-video flex-1 relative z-51">
                     <iframe
                         bind:this={iframe2}
                         src={embedSrc(id2)}
@@ -85,7 +85,7 @@
                     ></iframe>
                     {#if !played2}
                         <div
-                            class="absolute inset-0 z-[52] cursor-none rounded-lg bg-cover bg-center"
+                            class="absolute inset-0 z-52 cursor-none rounded-lg bg-cover bg-center"
                             style="background-image: url('{thumb(id2)}')"
                             onclick={() => play(iframe2, (v) => (played2 = v))}
                             role="button"
@@ -95,7 +95,7 @@
                         ></div>
                     {/if}
                 </div>
-                <div class="aspect-video flex-1 relative z-[51]">
+                <div class="aspect-video flex-1 relative z-51">
                     <iframe
                         bind:this={iframe3}
                         src={embedSrc(id3)}
@@ -106,7 +106,7 @@
                     ></iframe>
                     {#if !played3}
                         <div
-                            class="absolute inset-0 z-[52] cursor-none rounded-lg bg-cover bg-center"
+                            class="absolute inset-0 z-52 cursor-none rounded-lg bg-cover bg-center"
                             style="background-image: url('{thumb(id3)}')"
                             onclick={() => play(iframe3, (v) => (played3 = v))}
                             role="button"

@@ -3,6 +3,7 @@
 	import WorkSection from './WorkSection.svelte';
 	import Portfolio from './Portfolio.svelte';
 	import VideoSection from './VideoSection.svelte';
+	
 </script>
 
 <svelte:head>
