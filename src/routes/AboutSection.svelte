@@ -18,7 +18,7 @@
 />
 <div class="w-full flex flex-col md:flex-row">
     <div class="w-full md:w-1/3 z-10 md:shrink-0">
-        <enhanced:img class="h-[50vh] md:h-screen w-full object-cover md:sticky md:top-0" src={Headshot} alt="Hugo Morris" />
+        <enhanced:img class="h-[50vh] md:h-screen w-full object-cover object-top md:object-center md:sticky md:top-0" src={Headshot} alt="Hugo Morris" />
     </div>
 
     <section aria-label="About" class="w-full md:w-4/5 flex flex-col">
